@@ -1,0 +1,36 @@
+# Loon.barry
+# Set the first byte to be a ' '
+<<<<<^>>>>>
+]
+
+# Set the number of times to loop (16)
+<<<<^>>>>
+# Set the two numbers that we're adding to be 1 and 1
+]^
+]^
+# Return to the loop counter
+[[
+# Loop
+{
+	
+	] # Operand 1
+	+ # Add next
+	C # Copy result
+	[[P # Paste into operand 1
+	[ # Return to the loop counter
+} # End of loop
+
+# Perform an extra add after the loop to show it works
+]+[[[
+
+# Print the memory locations used # Expected
+n        # Loop counter : 0
+[p]]     # Space
+n        # Operand 1 : 17
+[[p]]]   # Space
+n        # Operand 2 : 1
+[[[p]]]] # Space
+n        # Result : 18
+
+# Ensure we return a zero
+]]]]
