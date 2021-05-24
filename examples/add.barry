@@ -1,9 +1,9 @@
-<<<<<^>>>>>
+<<<<<^>>>>> # Set operand 1
 ]
-<<^>>
+<<^>> # Set operand 2
 [
-+
-dp
++ # Add operand 1 and operand 2
+dp # Output the result in debug mode
 
 # Ensure we return a 0
 ]]]]]r
